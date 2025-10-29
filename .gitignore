@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+
+
+# Data files
+*.csv
+*.tsv
+*.zip
+*.pkl
+*.h5
+*.npy
+*.pt
+*.json
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Model files
+*.bin
+*.ckpt
+*.hdf5
+
+# Datasets
+cora_extracted/
+Embeddings/daberta_finetune_head_PubMed/
+Embeddings/daberta_finetuned_head_Cora/
+Embeddings/GoogleNews-vectors-negative300.bin/
+Embeddings/Cora_dataset_EMBS.csv
+Embeddings/GoogleNews-vectors-negative300.bin.gz
+PubMed_orig/
+processing_Cora copy.py
+processing_pubMed copy.py
