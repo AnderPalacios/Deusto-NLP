@@ -61,7 +61,6 @@ class ProcessPubMed():
         return df
 
 
-    ################# Now I'll focus on the rest of the files for this dataset
     def compare_files(self, file_path, original_df):
         df2 = pd.read_csv(file_path, sep='\t', skiprows=1, low_memory=False)  
 

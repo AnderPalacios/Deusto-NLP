@@ -130,7 +130,7 @@ class ProcessCora():
 
         for entry in dataset:
             for paper_id, urls in entry.items():
-                found_info = False  # Track if a valid paper info with abstract is found
+                found_info = False  
                 title = None
                 author = None
                 abstract = None
@@ -239,10 +239,8 @@ class ProcessCora():
 
     def get_paper_topic2(self, mapping_urls_topics, url_list, paper_id):
         for url in url_list:
-            # Normalize URL
             norm_url = self.normalize_url2(url)
             if norm_url in mapping_urls_topics:
-                # Return only the last part of the topic
                 return mapping_urls_topics[norm_url].rstrip("/").split("/")[-1]
         return None
 
