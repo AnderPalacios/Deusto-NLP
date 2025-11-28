@@ -28,7 +28,6 @@ class LSTMClassifier(nn.Module):
     
     def forward(self, x):
         # x shape: (batch_size, seq_len, input_dim)
-        # For embeddings, seq_len=1, so we add a dummy dimension
         if len(x.shape) == 2:
             x = x.unsqueeze(1)
         lstm_out, _ = self.lstm(x)
