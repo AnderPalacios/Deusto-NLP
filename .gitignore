@@ -36,6 +36,7 @@ Thumbs.db
 *.bin
 *.ckpt
 *.hdf5
+*.pth
 
 # Datasets
 cora_extracted/
