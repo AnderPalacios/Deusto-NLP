@@ -16,6 +16,7 @@ env/
 *.tsv
 *.zip
 *.pkl
+*.npz
 *.h5
 *.npy
 *.pt
